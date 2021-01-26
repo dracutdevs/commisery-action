@@ -48,3 +48,7 @@ Example of Conventional Commit check results
 --------------------------------------------
 
 .. image:: resources/example.png
+
+
+Forked for usage in dracut
+--------------------------
