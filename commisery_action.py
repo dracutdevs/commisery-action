@@ -75,8 +75,7 @@ def main(token: str, repository: str, pull_request_id: int) -> int:
     commits = pr.get_commits()
 
     for commit in commits:
-        if commit.commit.message.startswith("Merge branch '") \
-                and commit.commit.message.endswith("' into master"):
+        if commit.commit.message.startswith("Merge branch '"):
             continue
 
         if not check_message(commit.commit.message):
